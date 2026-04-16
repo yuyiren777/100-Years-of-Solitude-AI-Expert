@@ -55,7 +55,7 @@ else:
 
     # 保存向量库到本地
     db.save_local(DB_PATH)
-    print("向量库已保存，下次直接加载！")
+    print("向量库已保存，下次直接加载")
 
 # ==========================
 # 检索 n条（全部使用）
@@ -67,7 +67,7 @@ result = retriever.invoke(query)
 # 把 n条全部合并成上下文给 AI
 context = "\n".join([doc.page_content for doc in result])
 
-print("\n📖 检索到的全部原文：")
+print("\n检索到的全部原文：")
 print(context)
 
 # ==========================
